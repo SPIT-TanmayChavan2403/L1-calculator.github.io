@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Distressed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div id="container">
+                <div id="left-container"></div>
+                <div id="right-container"></div>
+                <div id="calculator">
+                    <div id="input-sec">
+                        <div id="input-fields">
+                            <input id="n1" onkeyup="updateResultField(this)" type="text" placeholder="Enter first number">
+                            <input id="n2" onkeyup="updateResultField2(this)" type="text" placeholder="Enter second number">
+                        </div>
+                        <div id="buttons">
+                            <button onclick="add()">Add</button>
+                            <button onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                    <div id="result-sec">
+                        <div id="res-wrapper">
+                            <h2 id="num1" >0</h2>
+                            <h3 id="plus"></h3>
+                            <h2 id="num2"></h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="modal">
+            <div id="color-bar"></div>
+            <div id="text">
+                <p>Please enter valid numbers</p>
+            </div>
+        </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
